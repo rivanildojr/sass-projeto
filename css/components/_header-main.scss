@@ -1,0 +1,57 @@
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+
+  > .logo-main a {
+    display: flex;
+    align-items: center;
+  }
+  > .logo-main img {
+    margin-right: 10px;
+  }
+
+  > .logo-main p {
+    color: $third-color;
+    font-size: 20px;
+    font-weight: $medium;
+  }
+
+  > .logo-main span {
+    font-weight: $bold;
+  }
+
+  > .menu {
+    display: flex;
+
+    > .options {
+      display: flex;
+
+      li + li {
+        margin-left: 40px;
+      }
+
+      a {
+        color: $second-color;
+        font-weight: $regular;
+      }
+    }
+
+    > .buttons {
+      display: flex;
+      margin-left: 150px;
+
+      > li a {
+        font-size: $font-medium;
+        color: $third-color;
+        font-weight: $medium;
+      }
+
+      > li .signUp {
+        @extend %button-second;
+        margin-left: 30px;
+      }
+    }
+  }
+}

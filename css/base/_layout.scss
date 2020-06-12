@@ -1,0 +1,15 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "sectionMain"
+    "sectionNumbers"
+    "sectionfeatures"
+    "sectionPlan"
+    "sectionNetwork"
+    "sectionFeedback"
+    "sectionSubscribe"
+    "footer";
+
+  font-family: $font-family;
+}
