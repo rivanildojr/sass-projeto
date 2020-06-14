@@ -50,6 +50,9 @@
 
       > li .signUp {
         @extend %button-second;
+        width: 150;
+        height: 45;
+        padding: 13px 45px;
         margin-left: 30px;
       }
     }

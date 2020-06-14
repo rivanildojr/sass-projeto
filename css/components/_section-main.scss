@@ -1,0 +1,30 @@
+.section-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  > .callAction {
+    width: 555px;
+    margin-right: 41px;
+    .marca {
+      @extend %marca;
+    }
+    > .title {
+      font-size: 50px;
+      line-height: 70px;
+      font-weight: $medium;
+    }
+    > .description {
+      font-weight: $regular;
+      font-size: $font-medium;
+      color: $second-color;
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+    > .call-action {
+      @extend %button-primary;
+      height: 60px;
+      width: 250px;
+      box-shadow: 0 20px 54px 0 rgba(245, 56, 56, 0.35);
+    }
+  }
+}

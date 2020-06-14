@@ -1,7 +1,12 @@
+%button-primary {
+  background-color: $primary-color;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 10px;
+}
+
 %button-second {
-  width: 150;
-  height: 45;
-  padding: 13px 45px;
   border: 1px solid $primary-color;
   border-radius: 50px;
   cursor: pointer;

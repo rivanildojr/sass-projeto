@@ -1,0 +1,41 @@
+.section-numbers {
+  height: 200px;
+  width: 1140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 103px;
+  box-shadow: 0 60px 114px 0 rgba(13, 16, 37, 0.06);
+  > .number-company + .number-company {
+    border-left: 2px solid #eeeff2;
+  }
+  > .number-company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+
+    > .image {
+      width: 55px;
+      height: 55px;
+      background-color: #ffecec;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 37px;
+    }
+
+    .title {
+      font-size: 25px;
+      font-weight: $bold;
+      line-height: 30px;
+    }
+
+    .subtitle {
+      font-weight: $regular;
+      line-height: 30px;
+      color: $second-color;
+    }
+  }
+}

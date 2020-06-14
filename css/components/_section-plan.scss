@@ -1,0 +1,100 @@
+.section-plan {
+  margin-top: 131px;
+  padding: calc((100% - 1200px) / 2);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  > .title {
+    color: $third-color;
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: $medium;
+    margin-bottom: 20px;
+  }
+  > .description {
+    color: $second-color;
+    font-size: $font-medium;
+    line-height: 30px;
+    font-weight: $regular;
+    margin-bottom: 60px;
+  }
+  > .planos {
+    display: flex;
+  }
+
+  > .planos .company-plan + .company-plan {
+    margin-left: 50px;
+  }
+  > .planos .company-plan {
+    width: 330px;
+    height: 760;
+    background-color: #fff;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    > .image {
+      padding-top: 80px;
+      margin-bottom: 30px;
+    }
+
+    > .title {
+      color: $third-color;
+      font-weight: $medium;
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+
+    .options {
+      height: 230px;
+      margin-bottom: 50px;
+    }
+
+    .item {
+      color: $second-color;
+      font-weight: $regular;
+      font-size: $font-small;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+    }
+
+    .item::before {
+      content: "";
+      display: block;
+      background-image: url(../../img/icon/check2.svg);
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 24px;
+      margin-right: 20px;
+    }
+
+    .value {
+      color: $third-color;
+      font-weight: $medium;
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+    .-medium {
+      color: $second-color;
+      font-weight: $regular;
+    }
+
+    .button {
+      @extend %button-second;
+      height: 45px;
+      width: 178px;
+      background: none;
+      margin-bottom: 50px;
+      &:hover {
+        background: $primary-color;
+        color: #fff;
+        box-shadow: 0 10px 54px 0 rgba(245, 56, 56, 0.35);
+      }
+    }
+  }
+}

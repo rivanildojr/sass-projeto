@@ -1,0 +1,45 @@
+.section-features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 53px;
+  > .image {
+    margin-right: 170px;
+  }
+  > .text {
+    max-width: 428px;
+
+    > .title {
+      font-size: 35px;
+      font-weight: $medium;
+      line-height: 50px;
+      margin-bottom: 20px;
+    }
+
+    > .description {
+      color: $second-color;
+      font-size: $font-medium;
+      font-weight: $regular;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+
+    .item {
+      color: $second-color;
+      font-size: $font-small;
+      font-weight: $regular;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+    }
+
+    .item::before {
+      content: "";
+      display: block;
+      background-image: url(../../img/icon/check.svg);
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+  }
+}
